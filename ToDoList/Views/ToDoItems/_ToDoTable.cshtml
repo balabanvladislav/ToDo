@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ToDoList.Models.ToDoItem>
+@{
+    ViewBag.Title = "_ToDoTable";
+}
+<table class="table" id="tablecontent">
+    <tr>
+        <th colspan="2">
+            <h1>
+                To-Do List <i class="fa fa-plus"></i>
+            </h1>
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="leftcell">
+                @if (item.IsDone)
+                {
+                <label for=@item.Id class="IsCompleted">&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.Text)&nbsp;&nbsp;</label>
+                    @Html.CheckBoxFor(modelItem => item.IsDone, new { id = item.Id, @class = "ActiveCheck", hidden = "hidden" })
+                }
+                else
+                {
+            <label for=@item.Id>&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.Text)&nbsp;&nbsp;</label>
+                @Html.CheckBoxFor(modelItem => item.IsDone, new { id = item.Id, @class = "ActiveCheck", hidden = "hidden" })
+                }
+                
+            </td>
+
+            <td class="rightcell">
+                @* @Html.ActionLink("Edit", "Edit", new { id = item.Id }) / *@
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+<script src="~/Custom_Scripts/AddCheckBoxListener.js"></script>
+ <script src="~/Custom_Scripts/script.js"></script> 

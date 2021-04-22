@@ -1,0 +1,6 @@
+D:\UTM\anul 2\sem2\TW\AspToDo\ToDoList\BL\bin\Debug\BL.dll
+D:\UTM\anul 2\sem2\TW\AspToDo\ToDoList\BL\bin\Debug\BL.pdb
+D:\UTM\anul 2\sem2\TW\AspToDo\ToDoList\BL\obj\Debug\BL.csprojAssemblyReference.cache
+D:\UTM\anul 2\sem2\TW\AspToDo\ToDoList\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+D:\UTM\anul 2\sem2\TW\AspToDo\ToDoList\BL\obj\Debug\BL.dll
+D:\UTM\anul 2\sem2\TW\AspToDo\ToDoList\BL\obj\Debug\BL.pdb

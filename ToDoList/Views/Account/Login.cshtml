@@ -1,0 +1,55 @@
+﻿@using ToDoList.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+}
+
+<div class="row">
+    <div class="">
+        <section id="loginForm" class="formcls ">
+            @using (Html.BeginForm("Login", "Account", new {ReturnUrl = ViewBag.ReturnUrl}, FormMethod.Post, new {@class = "form-horizontal inner", role = "form"}))
+            {
+                @Html.AntiForgeryToken()
+                <h3>LogIn</h3>
+
+                @Html.ValidationSummary(true, "", new {@class = "text-danger "})
+                <div class="">
+                    <div class="">
+                        @Html.TextBoxFor(m => m.Email, new {@class = "form-control", placeholder = " Email"})
+                        @Html.ValidationMessageFor(m => m.Email, "", new {@class = "text-danger", hidden = "hidden"})
+                    </div>
+
+                </div>
+                <div class="">
+                    <div class="">
+                        @Html.PasswordFor(m => m.Password, new {@class = "form-control", placeholder = " Password"})
+                        @Html.ValidationMessageFor(m => m.Password, "", new {@class = "text-danger", hidden = "hidden"})
+                    </div>
+
+
+                </div>
+                @* <div class="form-group"> *@
+                @*     <div> *@
+                @*         <div class="checkbox checkbox1"> *@
+                @*             @Html.CheckBoxFor(m => m.RememberMe) *@
+                @*             @Html.LabelFor(m => m.RememberMe) *@
+                @*         </div> *@
+                @*     </div> *@
+                @* </div> *@
+                <div class="form-group"> 
+                    <div class=" ">
+                        <button>
+                            Login
+                            <i class="zmdi zmdi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            }
+        </section>
+    </div>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

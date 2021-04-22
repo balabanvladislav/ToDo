@@ -1,0 +1,401 @@
+﻿
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+body {
+    font-family: "Poppins-Regular";
+    color: #333;
+    font-size: 13px;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url("images/image1.jpg");
+}
+.rightcell {
+    width: 60px;
+}
+
+.leftcell {
+    max-width: 550px;
+}
+
+.IsCompleted {
+    color: lightgrey;
+    text-decoration: line-through;
+}
+.table{
+    max-width:720px;
+    min-width:100px;
+}
+/* Set padding to keep content from hitting the edges */
+
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+
+
+/* elementele indeplinite*/
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+
+
+h1 {
+    background: #2980b9;
+    margin: 0;
+    padding: 10px 20px;
+<!-- text-transform: uppercase; -->
+    font-size: 24px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.fa-plus {
+    float: right;
+}
+
+
+tr {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666
+}
+
+tr:nth-child(2n) {
+        background: #f7f7f7
+    }
+th {
+    background: #2980b9
+}
+span {
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0
+}
+
+
+tr:hover span { 
+    width: 40px;
+    opacity: 1.0
+}
+input {
+    font-size: 18px;
+    color: #2980b9;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0)
+}
+
+input:focus {
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none
+}
+
+#container {
+    width: 600px;
+    margin: 50px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+}
+
+#tablecontent {
+    width: 600px;
+    margin: 25px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+}
+
+#header{
+    width: 100%;
+    height: 80px;
+    background: #2980b9;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border:30px black;
+
+}
+.test {
+    width: 600px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+}
+
+#todoCreateForm {
+    width: 600px;
+    height:60px;
+    margin: 50px auto;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navb {
+    background-color: #2980b9;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.formcls{
+    padding: 20px;
+    background: #fff;
+    max-width: 400px;
+    margin:50px auto;
+    /*display: flex;*/
+}
+.row{
+    margin: auto;
+}
+p, h1, h2, h3, h4, h5, h6, ul {
+    margin: 0; }
+
+img {
+    max-width: 100%; }
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0; }
+
+a:hover {
+    text-decoration: none; }
+
+:focus {
+    outline: none; }
+
+#header{
+    width: 100%;
+    height: 80px;
+    background: #2980b9;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+    border:30px black;
+
+}
+.wrapper {
+    min-height: 83vh;
+    display: flex;
+    align-items: center; }
+
+.wrapper .inner {
+    padding: 20px;
+    background: #fff;
+    max-width: 600px;
+    margin: 10px auto;
+    display: flex;
+}
+
+.row .inner {
+    padding: 20px;
+    background: #fff;
+    max-width: 300px;
+    margin: 6px auto;
+}
+
+
+.innerrep {
+    padding: 20px;
+    background: #fff;
+    max-width: 300px;
+    margin: 10px auto; }
+.inner .image-holder {
+    width: 50%; }
+.inner form {
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 45px;
+    padding-right: 45px; }
+.inner h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: "Poppins-SemiBold";
+    text-align: center;
+    margin:auto;
+    margin-bottom:30px;
+    
+    width: 70px;}
+
+.form-wrapper {
+    position: relative; }
+.form-wrapper i {
+    position: absolute;
+    bottom: 9px;
+    right: 0; }
+
+.form-control {
+    border: 1px solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    margin-bottom: 25px; }
+.form-control::-webkit-input-placeholder {
+    font-size: 13px;
+    color: #333;
+    font-family: "Poppins-Regular"; }
+.form-control::-moz-placeholder {
+    font-size: 13px;
+    color: #333;
+    font-family: "Poppins-Regular"; }
+.form-control:-ms-input-placeholder {
+    font-size: 13px;
+    color: #333;
+    font-family: "Poppins-Regular"; }
+.form-control:-moz-placeholder {
+    font-size: 13px;
+    color: #333;
+    font-family: "Poppins-Regular"; }
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding-left: 20px; }
+select option[value=""][disabled] {
+    display: none; }
+
+button {
+    border: none;
+    width: 164px;
+    height: 51px;
+    margin: auto;
+    margin-top: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #333;
+    font-size: 15px;
+    color: #fff;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+button i {
+    margin-left: 10px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+button:hover i, button:focus i, button:active i {
+    -webkit-animation-name: hvr-icon-wobble-horizontal;
+    animation-name: hvr-icon-wobble-horizontal;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+
+@-webkit-keyframes hvr-icon-wobble-horizontal {
+    16.65% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px); }
+    33.3% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px); }
+    49.95% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px); }
+    66.6% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px); }
+    83.25% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px); }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0); } }
+@keyframes hvr-icon-wobble-horizontal {
+    16.65% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px); }
+    33.3% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px); }
+    49.95% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px); }
+    66.6% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px); }
+    83.25% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px); }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0); } }
+@media (max-width: 1199px) {
+    .wrapper {
+        background-position: right center; } }
+@media (max-width: 991px) {
+    .inner form {
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-right: 30px; } }
+@media (max-width: 767px) {
+    .inner {
+        display: block; }
+    .inner .image-holder {
+        width: 100%; }
+    .inner form {
+        width: 100%;
+        padding: 40px 0 30px; }
+
+    button {
+        margin-top: 60px; } }
+.checkbox1{
+    margin-left: 0;
+}
+.inner2{
+    max-width: 600px;
+}
+
+.test3{
+    margin:o;
+}
+/*# sourceMappingURL=style.css.map */

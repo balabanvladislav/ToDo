@@ -1,0 +1,29 @@
+﻿@model ToDoList.Models.ToDoItem
+
+@{
+    ViewBag.Title = "Index";
+}
+<div id="inputForm">
+    @using (Ajax.BeginForm("AJAXCreate", "ToDoitems", new AjaxOptions
+    {
+    InsertionMode = InsertionMode.Replace,
+    HttpMethod = "POST",
+    UpdateTargetId = "tableDiv"
+    })){
+    <div class="form-group">
+        @Html.AntiForgeryToken()
+        <div id="todoCreateForm">
+
+            @Html.EditorFor(model => model.Text, new { htmlAttributes = new { @class = "" } }) @* form-control*@
+            @Html.ValidationMessageFor(model => model.Text, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    }
+</div>
+
+<div id="tableDiv"></div> <!-- crearea tabelului -->
+@section Scripts{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Custom_Scripts/TableBuilder.js"></script>
+    @Scripts.Render("~/bundles/jqueryval")
+}
