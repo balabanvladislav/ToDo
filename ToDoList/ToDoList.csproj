@@ -180,9 +180,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\ToDoItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -306,6 +304,12 @@
     <EmbeddedResource Include="Migrations\202104191202327_ToDo1.resx">
       <DependentUpon>202104191202327_ToDo1.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ToDo.Domain\ToDo.Domain.csproj">
+      <Project>{e49cece3-cd24-46fa-98d7-517eff1791ad}</Project>
+      <Name>ToDo.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

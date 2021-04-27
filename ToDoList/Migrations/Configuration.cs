@@ -4,18 +4,18 @@ namespace ToDoList.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
-    using ToDoList.Models;
+    using ToDo.Domain;
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ToDoList.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<ToDo.Domain.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(ToDoList.Models.ApplicationDbContext context)
+        protected override void Seed(ToDo.Domain.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -25,7 +25,7 @@ namespace ToDoList.Migrations
             AddUsers(context);
         }
 
-        void AddUsers(ToDoList.Models.ApplicationDbContext context)
+        void AddUsers(ToDo.Domain.ApplicationDbContext context)
         {
             var user = new ApplicationUser {UserName = "admin@lol.com"};
             var um = new UserManager<ApplicationUser>(

@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
-using ToDoList.Models;
+using ToDo.Domain;
 
 namespace ToDoList.Controllers
 {
@@ -27,7 +27,7 @@ namespace ToDoList.Controllers
             string currentUserId = User.Identity.GetUserId();
             ApplicationUser currentUser = db.Users.FirstOrDefault(
                 x => x.Id == currentUserId);
-            return db.ToDoItems.ToList().Where(x => x.User == currentUser);git cre
+            return db.ToDoItems.ToList().Where(x => x.User == currentUser);
         }
 
         public ActionResult BuildToDoTable()
