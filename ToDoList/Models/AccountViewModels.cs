@@ -81,7 +81,7 @@ namespace ToDoList.Models
         public string ConfirmPassword { get; set; }
         
         [Required]
-        [Display(Name = " Get Premium")]
+        [Display(Name = "IsPremium")]
         public bool IsPremium { get; set; }
     }
 
