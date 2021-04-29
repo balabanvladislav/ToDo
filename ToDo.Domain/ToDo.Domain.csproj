@@ -11,6 +11,7 @@
     <AssemblyName>ToDo.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="IToDoElement.cs" />
     <Compile Include="ToDoItem.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -53,12 +55,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ToDo.BL\ToDo.BL.csproj">
-      <Project>{d2e51f1d-2c83-4d2c-951a-e2d79eacf9bd}</Project>
-      <Name>ToDo.BL</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

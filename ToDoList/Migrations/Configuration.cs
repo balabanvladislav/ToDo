@@ -8,14 +8,14 @@ namespace ToDoList.Migrations
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ToDo.Domain.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<ToDo.BL.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(ToDo.Domain.ApplicationDbContext context)
+        protected override void Seed(ToDo.BL.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -25,7 +25,7 @@ namespace ToDoList.Migrations
             AddUsers(context);
         }
 
-        void AddUsers(ToDo.Domain.ApplicationDbContext context)
+        void AddUsers(ToDo.BL.ApplicationDbContext context)
         {
             var user = new ApplicationUser {UserName = "admin@lol.com"};
             var um = new UserManager<ApplicationUser>(

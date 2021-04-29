@@ -306,6 +306,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ToDo.BL\ToDo.BL.csproj">
+      <Project>{d2e51f1d-2c83-4d2c-951a-e2d79eacf9bd}</Project>
+      <Name>ToDo.BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ToDo.Domain\ToDo.Domain.csproj">
       <Project>{e49cece3-cd24-46fa-98d7-517eff1791ad}</Project>
       <Name>ToDo.Domain</Name>
