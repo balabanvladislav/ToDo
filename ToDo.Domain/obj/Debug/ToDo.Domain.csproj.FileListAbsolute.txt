@@ -1,0 +1,34 @@
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\ToDo.Domain.dll.config
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\ToDo.Domain.dll
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\ToDo.Domain.pdb
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\EntityFramework.dll
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\EntityFramework.xml
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.csprojAssemblyReference.cache
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.csproj.CoreCompileInputs.cache
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.csproj.CopyComplete
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.dll
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.pdb
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\ToDo.BL.dll
+C:\Users\37360\Desktop\test2\ToDo\ToDo.Domain\bin\Debug\ToDo.BL.pdb
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\bin\Debug\ToDo.Domain.dll.config
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\bin\Debug\ToDo.Domain.dll
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\bin\Debug\ToDo.Domain.pdb
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\bin\Debug\EntityFramework.dll
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\bin\Debug\EntityFramework.xml
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.csprojAssemblyReference.cache
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.csproj.CoreCompileInputs.cache
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.csproj.CopyComplete
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.dll
+D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.pdb
