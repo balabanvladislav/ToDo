@@ -23,8 +23,8 @@ namespace ToDoList
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      
                       "~/Content/site.css",
-                      "~/Content/css2/style.scss",
                       "~/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"));
         }
     }

@@ -14,6 +14,7 @@ namespace ToDoList.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: ToDoItems
+        [Authorize]
         public ActionResult Index()
         {
             return View();
@@ -114,7 +115,6 @@ namespace ToDoList.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            
             
             
             ToDoItem toDoItem = db.ToDoItems.Find(id);
