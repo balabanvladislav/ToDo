@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using System;
+using Microsoft.AspNet.Identity;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -29,7 +30,23 @@ namespace ToDoList.Controllers
             string currentUserId = User.Identity.GetUserId();
             ApplicationUser currentUser = db.Users.FirstOrDefault(
                 x => x.Id == currentUserId);
-            return db.ToDoItems.ToList().Where(x => x.User == currentUser);
+
+            IEnumerable<ToDoItem> myToDoes = db.ToDoItems.ToList().Where(x => x.User == currentUser);
+
+            int completeCount = 0;
+            foreach (ToDoItem toDo in myToDoes)
+            {
+                if (toDo.IsDone)
+                {
+                    completeCount++;
+                }
+            }
+
+            ViewBag.Percent = Math.Round(100f * ((float) completeCount / (float) myToDoes.Count()));
+            if (myToDoes.Count() == 0)
+            {
+                ViewBag.Percent = 0;}
+            return myToDoes;
         }
 
         public ActionResult BuildToDoTable()

@@ -1,11 +1,14 @@
-﻿@model IEnumerable<ToDo.Domain.ToDoItem>
+﻿@using Microsoft.AspNet.Identity
+
+@model IEnumerable<ToDo.Domain.ToDoItem>
 @{
     ViewBag.Title = "_ToDoTable";
 }
 
 
- 
+
 <table class="table" id="tablecontent">
+
     <tr>
         <th colspan="2">
             <h1>
@@ -13,27 +16,40 @@
             </h1>
         </th>
     </tr>
-
+@if (User.IsInRole("MainAdmin") || User.IsInRole("Admin") || User.IsInRole("Premium"))
+{
+    <tr>
+        <td colspan="2">
+            <div id="progressBarToDo">
+                <p>@(ViewBag.Percent)%</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar"
+                         style="width: @(ViewBag.Percent)%"></div>
+                </div>
+            </div>
+        </td>
+    </tr>
+}
     @foreach (var item in Model)
     {
         <tr>
             <td class="leftcell">
                 @if (item.IsDone)
                 {
-                <label for=@item.Id class="IsCompleted">&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.Text)&nbsp;&nbsp;</label>
-                    @Html.CheckBoxFor(modelItem => item.IsDone, new { id = item.Id, @class = "ActiveCheck", hidden = "hidden" })
+                    <label for=@item.Id class="IsCompleted">&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.Text)&nbsp;&nbsp;</label>
+                    @Html.CheckBoxFor(modelItem => item.IsDone, new {id = item.Id, @class = "ActiveCheck", hidden = "hidden"})
                 }
                 else
                 {
-            <label for=@item.Id>&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.Text)&nbsp;&nbsp;</label>
-                @Html.CheckBoxFor(modelItem => item.IsDone, new { id = item.Id, @class = "ActiveCheck", hidden = "hidden" })
+                    <label for=@item.Id>&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.Text)&nbsp;&nbsp;</label>
+                    @Html.CheckBoxFor(modelItem => item.IsDone, new {id = item.Id, @class = "ActiveCheck", hidden = "hidden"})
                 }
-                
+
             </td>
 
             <td class="rightcell">
                 @* @Html.ActionLink("Edit", "Edit", new { id = item.Id }) / *@
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                @Html.ActionLink("Delete", "Delete", new {id = item.Id})
             </td>
         </tr>
     }

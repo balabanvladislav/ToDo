@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fea49d2b-5749-4e56-86a3-fff42005cc36" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ToDoList/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ToDoList/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ToDoList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ToDoList/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ToDoList/App_Data/DefaultConnection.mdf" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList/App_Data/DefaultConnection.mdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ToDoList/App_Data/DefaultConnection_log.ldf" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList/App_Data/DefaultConnection_log.ldf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoList/App_Data/aspnet-ToDoList-20210419011046.mdf" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList/App_Data/aspnet-ToDoList-20210419011046.mdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoList/App_Data/aspnet-ToDoList-20210419011046_log.ldf" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList/App_Data/aspnet-ToDoList-20210419011046_log.ldf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoList/Controllers/ToDoItemsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList/Controllers/ToDoItemsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoList/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList/Views/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoList/Views/Role/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList/Views/Role/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoList/Views/Role/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList/Views/Role/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoList/Views/ToDoItems/_ToDoTable.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList/Views/ToDoItems/_ToDoTable.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ToDoList/bin/ToDoList.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList/bin/ToDoList.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ToDoList/bin/ToDoList.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList/bin/ToDoList.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ToDoList/obj/Debug/ToDoList.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoList/obj/Debug/ToDoList.csprojAssemblyReference.cache" afterDir="false" />
@@ -57,17 +66,19 @@
       <option value="$PROJECT_DIR$/ToDo.Domain/IToDoElement.cs" />
       <option value="$PROJECT_DIR$/ToDo.Domain/IdentityModels.cs" />
       <option value="$PROJECT_DIR$/ToDoList/App_Start/BundleConfig.cs" />
-      <option value="$PROJECT_DIR$/ToDoList/Controllers/ToDoItemsController.cs" />
-      <option value="$PROJECT_DIR$/ToDoList/Views/Role/Create.cshtml" />
-      <option value="$PROJECT_DIR$/ToDoList/Views/Role/AssignRoleToUser.cshtml" />
       <option value="$PROJECT_DIR$/ToDoList/Models/AccountViewModels.cs" />
       <option value="$PROJECT_DIR$/ToDoList/Views/Account/RegisterRole.cshtml" />
       <option value="$PROJECT_DIR$/ToDoList/Controllers/AccountController.cs" />
       <option value="$PROJECT_DIR$/ToDoList/Views/Shared/_Nav.cshtml" />
-      <option value="$PROJECT_DIR$/ToDoList/Views/Role/Index.cshtml" />
       <option value="$PROJECT_DIR$/ToDoList/Views/Shared/_LoginPartial.cshtml" />
       <option value="$PROJECT_DIR$/ToDoList/Controllers/RoleController.cs" />
+      <option value="$PROJECT_DIR$/ToDoList/Views/Role/Index.cshtml" />
+      <option value="$PROJECT_DIR$/ToDoList/Views/Role/Create.cshtml" />
+      <option value="$PROJECT_DIR$/ToDoList/Views/Role/AssignRoleToUser.cshtml" />
       <option value="$PROJECT_DIR$/ToDoList/Views/ToDoItems/_ToDoTable.cshtml" />
+      <option value="$PROJECT_DIR$/ToDoList/Views/Account/Register.cshtml" />
+      <option value="$PROJECT_DIR$/ToDoList/Controllers/ToDoItemsController.cs" />
+      <option value="$PROJECT_DIR$/ToDoList/Content/Site.css" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rkCwtvQjziwViHLIYQibVP5R1J" />
@@ -160,7 +171,12 @@
       <workItem from="1619728345253" duration="749000" />
       <workItem from="1619764013887" duration="7637000" />
       <workItem from="1619772406808" duration="946000" />
-      <workItem from="1619773384052" duration="37000" />
+      <workItem from="1619773384052" duration="200000" />
+      <workItem from="1620916441762" duration="951000" />
+      <workItem from="1621277476926" duration="1454000" />
+      <workItem from="1621338555332" duration="2985000" />
+      <workItem from="1621352644673" duration="556000" />
+      <workItem from="1621417674085" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1619515738925</created>
@@ -197,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619773091632</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="roles">
+      <created>1619773605407</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619773605407</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +259,27 @@
     <MESSAGE value="test2" />
     <MESSAGE value="asd" />
     <MESSAGE value="adding roles" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding roles" />
+    <MESSAGE value="roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="roles" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ToDoList/Views/ToDoItems/_ToDoTable.cshtml</url>
+          <line>47</line>
+          <properties documentPath="D:\UTM\anul 2\sem2\TW\test2\ToDo\ToDoList\Views\ToDoItems\_ToDoTable.cshtml" initialLine="31" isMultiMethodBreakpoint="true">
+            <option name="multiMethodBreakpoint" value="true" />
+            <startOffsets>
+              <option value="-1" />
+            </startOffsets>
+            <endOffsets>
+              <option value="-1" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
